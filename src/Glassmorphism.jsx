@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./GlassmorphismStyle.css";
 
 function Glassmorphism() {
-  const [formData, setFormData] = useState({ name: "", password: "" });
+  const [formData, setFormData] = useState({ username: "", password: "" });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -12,7 +12,7 @@ function Glassmorphism() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Form submitted successfully!");
-    setFormData({ name: "", password: "" });
+    setFormData({ username: "", password: "" });
   };
 
   return (
@@ -33,7 +33,7 @@ function Glassmorphism() {
                 <div className="inputBox">
                   <input
                     type="text"
-                    name="name"
+                    name="username"
                     value={formData.username}
                     onChange={handleChange}
                     placeholder="Username"
@@ -45,7 +45,7 @@ function Glassmorphism() {
                     name="password"
                     value={formData.password}
                     onChange={handleChange}
-                    placeholder="Username"
+                    placeholder="Password"
                   />
                 </div>
                 <div className="inputBox">
