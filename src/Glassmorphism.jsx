@@ -18,7 +18,7 @@ function Glassmorphism() {
   return (
     <div className="body">
       <section className="section">
-        <div className="color">Pink</div>
+        <div className="color"></div>
         <div className="color"></div>
         <div className="color"></div>
         <div className="box">
